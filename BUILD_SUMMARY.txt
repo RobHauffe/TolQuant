@@ -1,0 +1,144 @@
+TolQuant - Build Summary and Distribution Package
+==================================================
+
+BUILD INFORMATION
+-----------------
+Version:        1.0.0
+Build Date:     March 31, 2026
+Author:         Dr. Robert Hauffe
+Python Version: 3.14.3
+PyInstaller:    6.18.0
+Platform:       Windows 11 (64-bit)
+
+EXECUTABLE DETAILS
+------------------
+File Name:      TolQuant.exe
+Location:       dist/TolQuant.exe
+File Size:      [Check actual size in dist folder]
+SHA256 Hash:    8753913380F0BB004683B510ABA7271561C3E0232C1F8E43DD27A730677EC9DB
+
+DISTRIBUTION PACKAGE CONTENTS
+------------------------------
+Essential Files:
+  - dist/TolQuant.exe          (Standalone executable)
+  - README.txt                 (User documentation)
+  - LICENSE                    (MIT License)
+  - requirements.txt           (Python dependencies)
+  - .gitignore                 (Git ignore rules)
+
+Source Code (for GitHub):
+  - main.py                    (Application entry point)
+  - app/                       (Application modules)
+    - core/analyzer.py         (Data analysis)
+    - core/stats.py            (Statistical tests)
+    - ui/input_panel.py        (Data input)
+    - ui/plot_widget.py        (Visualization)
+    - ui/results_widget.py     (Results display)
+    - export/exporter.py       (Excel export)
+
+Build Files:
+  - build.bat                  (Windows build script)
+  - TolQuant.spec              (PyInstaller specification)
+
+Icon Files:
+  - TolQuant_icon.ico          (Windows icon)
+  - TolQuant_icon.png          (PNG version)
+
+VERIFICATION STEPS
+------------------
+1. Verify executable checksum:
+   PowerShell: (Get-FileHash -Algorithm SHA256 dist\TolQuant.exe).Hash
+   Expected:   8753913380F0BB004683B510ABA7271561C3E0232C1F8E43DD27A730677EC9DB
+
+2. Test the executable:
+   - Double-click dist\TolQuant.exe
+   - Verify application starts without errors
+   - Test "Load Example Data" function
+   - Verify analysis runs correctly
+   - Test Excel export
+
+3. Verify source code:
+   - git clone [repository-url]
+   - pip install -r requirements.txt
+   - python main.py
+   - Verify all features work
+
+GITHUB PUBLICATION CHECKLIST
+-----------------------------
+□ Create new repository on GitHub
+□ Initialize with README.md (convert README.txt to Markdown)
+□ Add LICENSE file
+□ Add .gitignore file
+□ Push all source code (exclude dist/, build/, __pycache__/, venv/)
+□ Create a release tag (v1.0.0)
+□ Upload TolQuant.exe as release asset
+□ Include checksum in release notes
+□ Add topics: scientific-computing, biology, metabolism, python, pyqt6
+
+ZENODO PUBLICATION CHECKLIST
+-----------------------------
+□ Create GitHub release (v1.0.0)
+□ Go to zenodo.org
+□ Login with GitHub account
+□ Click "New Upload"
+□ Select "Import from GitHub"
+□ Choose TolQuant repository
+□ Fill in metadata:
+   - Title: TolQuant: Tolerance Test Analyzer
+   - Creators: Hauffe, Robert
+   - Description: Scientific software for GTT/ITT data analysis
+   - Publication date: March 31, 2026
+   - Resource type: Software
+   - License: MIT License
+   - Keywords: glucose tolerance test, insulin tolerance test, 
+                metabolic analysis, statistics, Python, PyQt6
+□ Upload additional files if needed (executable, documentation)
+□ Add DOI badge to GitHub README
+□ Publish on Zenodo
+
+CITATION FORMAT
+---------------
+Hauffe, R. (2026). TolQuant: Tolerance Test Analyzer (Version 1.0.0) 
+[Computer software]. Zenodo. https://doi.org/[DOI will be assigned]
+
+RECOMMENDED NEXT STEPS
+----------------------
+1. Convert README.txt to README.md (Markdown format for GitHub)
+2. Add screenshots to README (application interface, example results)
+3. Create a simple website or GitHub Pages for documentation
+4. Consider adding unit tests for core functionality
+5. Set up automated testing with GitHub Actions
+6. Add issue templates for bug reports and feature requests
+7. Consider creating installer using Inno Setup or NSIS
+
+SUPPORT AND MAINTENANCE
+-----------------------
+- Monitor GitHub Issues for bug reports
+- Respond to user questions promptly
+- Consider semantic versioning for updates
+- Maintain changelog in README or CHANGELOG.md
+- Regular dependency updates for security
+
+BUILD COMMANDS REFERENCE
+-------------------------
+Rebuild executable:
+  .\build.bat
+
+Verify Python environment:
+  python --version
+  pip list
+
+Check dependencies:
+  pip install -r requirements.txt --dry-run
+
+Test from source:
+  python main.py
+
+Clean build artifacts:
+  rmdir /s build dist
+  del TolQuant.spec
+
+================================================================================
+Built for the scientific community by Dr. Robert Hauffe
+Distributed under MIT License
+================================================================================

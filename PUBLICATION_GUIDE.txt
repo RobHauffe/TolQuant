@@ -1,0 +1,208 @@
+================================================================================
+TolQuant v1.0.0 - GitHub/Zenodo Publication Package
+================================================================================
+
+COMPLETED TASKS
+---------------
+
+✅ 1. UPDATED "ABOUT" DIALOG
+   - Added: "Version: 1.0.0"
+   - Added: "Author: Dr. Robert Hauffe"
+   - Added: "Created: March 31, 2026"
+   - Location: main.py, show_about() method
+
+✅ 2. BUILT WINDOWS EXECUTABLE
+   - File: dist/TolQuant.exe
+   - Icon: TolQuant_icon.ico embedded
+   - Build Tool: PyInstaller 6.18.0
+   - Python: 3.14.3
+   - SHA256: 8753913380F0BB004683B510ABA7271561C3E0232C1F8E43DD27A730677EC9DB
+
+✅ 3. CREATED COMPREHENSIVE DOCUMENTATION
+   - README.txt: Detailed user guide (text format)
+   - README.md: GitHub-optimized Markdown version
+   - LICENSE: MIT License
+   - BUILD_SUMMARY.txt: Complete build and distribution guide
+   - .gitignore: Git ignore rules for Python/PyInstaller
+
+✅ 4. CREATED BUILD SCRIPTS
+   - build.bat: Automated Windows build script
+   - TolQuant.spec: PyInstaller configuration (auto-generated)
+
+✅ 5. EXPORT FUNCTIONALITY FIXED
+   - ITT and GTT metrics now correctly labeled in exports
+   - Exported values match UI results table exactly
+   - Proper NaN handling for optional metrics
+
+FILES READY FOR GITHUB
+----------------------
+
+Essential Files:
+  ✓ main.py                    - Application entry point
+  ✓ requirements.txt           - Python dependencies
+  ✓ README.md                  - GitHub README (Markdown)
+  ✓ LICENSE                    - MIT License
+  ✓ .gitignore                 - Git ignore rules
+  ✓ build.bat                  - Build script
+  ✓ TolQuant_icon.ico          - Application icon
+  ✓ TolQuant_icon.png          - Icon PNG version
+  
+Application Modules:
+  ✓ app/__init__.py
+  ✓ app/core/analyzer.py       - Data analysis and metrics
+  ✓ app/core/stats.py          - Statistical tests
+  ✓ app/ui/input_panel.py      - Data input interface
+  ✓ app/ui/plot_widget.py      - Visualization
+  ✓ app/ui/results_widget.py   - Results display
+  ✓ app/export/exporter.py     - Excel export
+
+Documentation:
+  ✓ README.txt                 - Detailed user guide
+  ✓ BUILD_SUMMARY.txt          - Build and distribution guide
+
+Distribution:
+  ✓ dist/TolQuant.exe          - Standalone executable
+  ✓ dist/TolQuant.pdb          - Debug symbols (optional)
+
+GITHUB PUBLICATION STEPS
+-------------------------
+
+1. Create Repository:
+   - Go to github.com
+   - Click "New Repository"
+   - Name: "TolQuant"
+   - Description: "Tolerance Test Analyzer for GTT/ITT Data"
+   - Public repository
+   - Don't initialize with README (we have one)
+
+2. Push Code:
+   ```bash
+   cd C:\Users\Rob\Desktop\Coding-Projects\_TolQuant
+   git init
+   git add .
+   git commit -m "Initial commit: TolQuant v1.0.0"
+   git branch -M main
+   git remote add origin https://github.com/[YOUR_USERNAME]/TolQuant.git
+   git push -u origin main
+   ```
+
+3. Create Release:
+   - Go to repository → Releases → Create new release
+   - Tag version: v1.0.0
+   - Release title: TolQuant v1.0.0
+   - Description: See RELEASE_TEMPLATE.txt
+   - Upload: dist/TolQuant.exe
+   - Check "Set as latest release"
+
+4. Add Repository Topics:
+   - scientific-computing
+   - biology
+   - metabolism
+   - python
+   - pyqt6
+   - glucose-tolerance-test
+   - insulin-tolerance-test
+   - statistics
+
+ZENODO PUBLICATION STEPS
+-------------------------
+
+1. Prepare Metadata:
+   - Title: TolQuant: Tolerance Test Analyzer
+   - Creators: Hauffe, Robert
+   - Affiliation: [Your institution]
+   - Description: Scientific software for analyzing glucose and insulin 
+                  tolerance test data with advanced statistical methods
+   - Publication date: March 31, 2026
+   - Resource type: Software
+   - License: MIT License
+   - Keywords: glucose tolerance test, insulin tolerance test, 
+                metabolic analysis, statistics, Python, PyQt6, 
+                GTT, ITT, ANOVA, scientific software
+
+2. Upload:
+   - Go to zenodo.org
+   - Login with GitHub
+   - Click "New Upload"
+   - Select "Import from GitHub"
+   - Choose TolQuant repository
+   - Fill in metadata
+   - Upload additional files if needed
+
+3. Publish:
+   - Click "Publish"
+   - Zenodo will assign a DOI
+   - DOI format: 10.5281/zenodo.XXXXXXX
+
+4. Update GitHub:
+   - Add DOI badge to README.md
+   - Update citation section with actual DOI
+   - Add Zenodo link to repository description
+
+RELEASE NOTES TEMPLATE
+----------------------
+
+## TolQuant v1.0.0
+
+### 🎉 Initial Release
+
+TolQuant is a scientific software application for analyzing glucose tolerance 
+tests (GTT) and insulin tolerance tests (ITT) with advanced statistical methods.
+
+### ✨ Features
+- GTT and ITT data analysis
+- Two-way repeated measures ANOVA
+- Automatic post-hoc tests
+- Interactive visualization
+- Excel export with multiple sheets
+- Standalone Windows executable
+
+### 📦 Installation
+Download TolQuant.exe from the Assets section below.
+
+### 📖 Documentation
+See README.md for detailed usage instructions.
+
+### 🔧 Build from Source
+```bash
+git clone https://github.com/[username]/TolQuant.git
+cd TolQuant
+pip install -r requirements.txt
+python main.py
+```
+
+### 📊 SHA256 Checksum
+`8753913380F0BB004683B510ABA7271561C3E0232C1F8E43DD27A730677EC9DB`
+
+### 📜 License
+MIT License - See LICENSE file
+
+### 👨‍💻 Author
+Dr. Robert Hauffe
+
+### 🙏 Acknowledgments
+Built for the scientific community to facilitate metabolic tolerance test analysis.
+
+NEXT STEPS AFTER PUBLICATION
+-----------------------------
+
+1. Share on social media (Twitter, LinkedIn)
+2. Add to research group website
+3. Include in publications/papers
+4. Monitor GitHub Issues for feedback
+5. Consider creating video tutorial
+6. Add unit tests for continuous integration
+7. Set up automated builds with GitHub Actions
+8. Create documentation website with GitHub Pages
+
+CONTACT INFORMATION
+-------------------
+Author: Dr. Robert Hauffe
+Email: [Your email]
+GitHub: https://github.com/[YOUR_USERNAME]
+Institution: [Your institution]
+
+================================================================================
+Package prepared on: March 31, 2026
+Ready for GitHub and Zenodo publication!
+================================================================================
